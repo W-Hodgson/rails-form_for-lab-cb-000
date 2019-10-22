@@ -5,7 +5,7 @@ class StudentsController < ApplicationController
   end
 
   def new
-    @student = {}
+
   end
 
   def create
