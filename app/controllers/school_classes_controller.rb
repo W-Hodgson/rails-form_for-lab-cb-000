@@ -9,7 +9,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @school_class = SchoolClass.new(params.require(:school_class).permit())
+    @school_class = SchoolClass.new(params.require(:school_class).permit(:title, :room_))
   end
 
   def edit
