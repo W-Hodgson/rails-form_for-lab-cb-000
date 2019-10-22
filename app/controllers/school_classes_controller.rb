@@ -9,6 +9,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    @school_class = SchoolClass.new(params.require(:school_class))
   end
 
   def edit
