@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
   end
 
   def edit
-    @student = Student.find(params[:id])
+    @student = Student.find_or_create_by(params[:id])
   end
 
   def update
