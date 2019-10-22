@@ -8,6 +8,7 @@ class StudentsController < ApplicationController
   end
 
   def create
+    @student = Student.create()
   end
 
   def edit
