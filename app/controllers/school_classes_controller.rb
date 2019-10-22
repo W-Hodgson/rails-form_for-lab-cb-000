@@ -19,7 +19,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def update
-
+    @school
   end
 
   def show
