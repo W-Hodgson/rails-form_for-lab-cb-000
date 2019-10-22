@@ -18,5 +18,6 @@ class SchoolClassesController < ApplicationController
   end
 
   def show
+    @school_class = SchoolClass.find()
   end
 end
