@@ -9,7 +9,8 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(params.require(:students).permit(:first_name, :last_name))
-    @student.save 
+    @student.save
+    redirect_to show_student_path
   end
 
   def edit
