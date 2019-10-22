@@ -5,7 +5,7 @@
     <title>Student Form</title>
   </head>
   <body>
-    <%= form_for(Student.new, url: students_path) do |f| %>
+    <%= form_for :students, url: students_path do |f| %>
       <label>First Name: </label> <br>
       <%= f.text_field :first_name %> <br>
 
