@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
   end
 
   def update
-    @student = Student.find_or_create_by(params[:id])
+    @student = Student.find_or_create_by(id: params[:id])
     @student.update(params.require(:student).permit(:first_name, :last_name))
     redirect_to student_path(@student)
   end
