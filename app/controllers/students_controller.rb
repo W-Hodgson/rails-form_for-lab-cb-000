@@ -8,7 +8,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.new(params.require(:students).permit(:first_name, :description))
+    @student = Student.new(params.require(:students).permit(:first_name, :last_name))
   end
 
   def edit
